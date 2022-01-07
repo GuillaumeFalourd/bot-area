@@ -1,13 +1,13 @@
+from os import read
 import request
 import time
 
 
-username = 'eni34310'
-password = 'areahello34'
-
 while True:
     out = request.getOutValue()
 
-    timeToSleep = request.vote(username, password, out)
+    lineSplit = open("log", "r").readline().split(' ')
+
+    timeToSleep = request.vote(lineSplit[0], lineSplit[1], out)
 
     time.sleep(timeToSleep)

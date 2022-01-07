@@ -20,7 +20,7 @@ def connect(username, password):
             print('Connecté : ' + text[2] + ' - ' + text[1] + ' pts')
             return result
         else:
-            print('Mauvais mot de passe : ' + username)
+            print('Mauvais mot de passe pour ' + username + '.')
 
     except Exception as ex:
         print('Erreur lors de la connexion : ')
